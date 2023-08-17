@@ -1,7 +1,7 @@
 # cypress running steps 
 1)clone the repository 
 
-   git clone https://github.com/rushireddy143/cypress.git 
+    git clone https://github.com/rushireddy143/cypress.git 
 
 
 2)install cypress and dev dependencies
