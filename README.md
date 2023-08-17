@@ -6,7 +6,7 @@
 
 2)install cypress and dev dependencies
 
-   npm install cypress --save-dev
+    npm install cypress --save-dev
 
 3) fix audit issues
    
