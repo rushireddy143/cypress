@@ -9,8 +9,10 @@ git clone https://github.com/rushireddy143/cypress.git
 npm install cypress --save-dev
 
 3) fix audit issues
+   
 npm audit fix --force
 
 4)open the Cypress Test Runner by running
+
 npx cypress open
 
