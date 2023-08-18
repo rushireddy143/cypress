@@ -1,7 +1,7 @@
 
 Note :  1)download node js & install
 
-        2)Install vs code vs Test in your laptop
+        2)Install vs code or  vs Test in your laptop
 
 # cypress running steps 
 1)clone the repository 
