@@ -7,13 +7,14 @@ Note :  1)download node js & install
         
           https://code.visualstudio.com/
 
+
 # cypress running steps 
-1)clone the repository 
+1) clone the repository 
 
     git clone https://github.com/rushireddy143/cypress.git 
 
 
-2)install cypress and dev dependencies
+2) install cypress and dev dependencies
 
     npm install cypress --save-dev
 
