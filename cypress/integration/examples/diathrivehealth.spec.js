@@ -58,6 +58,11 @@ describe('dithrive health test',() => {
           
           //resorces
           cy.get('[data-testid=SidePannel-Text-Title3]').click()
+          cy.get('[data-testid=IconButton-Image-Icon]').click()
+          cy.get('[data-testid=SearchFilterView-Image-Filter]').click()
+          //cy.wait(5000)
+          //cy.contains('Apply').should('be.disabled')
+          //cy.get('.r-qn3fzs > :nth-child(2)')
 
           
           
