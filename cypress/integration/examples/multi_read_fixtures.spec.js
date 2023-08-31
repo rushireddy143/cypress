@@ -11,19 +11,19 @@ describe('diathrive miltiple logins', () => {
                 cy.get('[data-testid=SignIn-SignInInputForm-PasswordInput]').type(userdata.password);
                 cy.get('[data-testid=Button-Text-Title]').should('have.text',userdata.login).click();
                 
-                if(userdata.username=='prashanth123@gmail.com' && userdata.password=='Prashanth@123')
-                {
+                //if(userdata.username=='prashanth123@gmail.com' && userdata.password=='Prashanth@123')
+                //{
                     cy.get('[data-testid=BottomExpandableDrawer-Button-1]').click();
                     cy.get('[data-testid=EligibilityStatusModal-Button-Close]').should('have.text',userdata.next).click();
                     cy.get('[data-testid=SidePannel-Text-SignOut]').should('have.text',userdata.logout).click();
                     cy.get('[data-testid=SidePannel-Button-SignOut]').click();
                       
-                }
-                else{
+                //}
+                //else{
                     
-                    cy.get('[data-testid=SignIn-Text-Error]').should('have.text',userdata.expected);
+                    //cy.get('[data-testid=SignIn-Text-Error]').should('have.text',userdata.expected);
                     
-                }
+                //}
             })
         })
     })

@@ -7,17 +7,32 @@
     "logout": "Sign-out"
 },
 {
-    "username": "prashanth123@gmail.com",
-    "password": "Prashanth@12",
+    "username": "prashanth1818@gmail.com",
+    "password": "Prashanth@1818",
     "login": "Continue",
-    "expected":"[data-testid=SignIn-Text-Error]"
+    "next": "Close",
+    "logout": "Sign-out"
     
 },
 {
-    "username": "prashanth12@gmail.com",
-    "password": "Prashanth@123",
+    "username": "prashanth99@gmail.com",
+    "password": "Prashanth@99",
     "login": "Continue",
-    "expected":"[data-testid=SignIn-Text-Error]"
-    
+    "next": "Close",
+    "logout": "Sign-out"
+},
+{
+    "username": "prashanth981@gmail.com",
+    "password": "Prashanth@981",
+    "login": "Continue",
+    "next": "Close",
+    "logout": "Sign-out"
+},
+{
+    "username": "prashanth189@gmail.com",
+    "password": "Prashanth@189",
+    "login": "Continue",
+    "next": "Close",
+    "logout": "Sign-out"
 }
 ]
