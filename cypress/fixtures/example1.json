@@ -1,0 +1,23 @@
+[
+{
+    "username": "prashanth123@gmail.com",
+    "password": "Prashanth@123",
+    "login": "Continue",
+    "next": "Close",
+    "logout": "Sign-out"
+},
+{
+    "username": "prashanth123@gmail.com",
+    "password": "Prashanth@12",
+    "login": "Continue",
+    "expected":"[data-testid=SignIn-Text-Error]"
+    
+},
+{
+    "username": "prashanth12@gmail.com",
+    "password": "Prashanth@123",
+    "login": "Continue",
+    "expected":"[data-testid=SignIn-Text-Error]"
+    
+}
+]
