@@ -9,7 +9,7 @@ describe('dithrive health test',() => {
          cy.get('[data-testid=Input-Image-Right]').click()
          cy.get('[data-testid=Button-Text-Title]').click()
          cy.wait(5000)
-         cy.get('.r-1ydw1k6 > .r-1mgje8r').click()
+         /*cy.get('.r-1ydw1k6 > .r-1mgje8r').click()
          cy.wait(5000)
          cy.get('[data-testid=AddGlucoseLevel-Input-1]').type('198')
          cy.get('[data-testid=AddGlucoseLevel-Button-Save]').click()
@@ -31,7 +31,7 @@ describe('dithrive health test',() => {
           cy.get('[data-testid=AddNewNoteDrawer-TextInput-Title]').type('my glucous levels are normal in last two weeks')
           cy.get('[data-testid=AddNewNoteDrawer-ButtonWithIcon-Date]').click()
           cy.get('[data-testid=CalendarView-Image-LeftArrow]').click()
-          cy.get('[data-testid="CalendarView-Calendar-Main.day_2023-07-18"]').click()
+          cy.get('[data-testid="CalendarView-Calendar-Main.day_2023-08-18"]').click()
           cy.get('[data-testid=NotesCalendar-Button-Confirm]').click()
           cy.get('.r-mlyl9t').click()
           
@@ -62,9 +62,14 @@ describe('dithrive health test',() => {
           cy.get('[data-testid=SearchFilterView-Image-Filter]').click()
           //cy.wait(5000)
           //cy.contains('Apply').should('be.disabled')
-          //cy.get('.r-qn3fzs > :nth-child(2)')
+          //cy.get('.r-qn3fzs > :nth-child(2)')*/
 
-          
-          
+          cy.get('[data-testid=SidePannel-Text-Title4]').click()
+          cy.wait(1000)
+          //cy.get('div>[data-testid="ProductCatalog-FlatGrid-Products"]',div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>div>div,nth-child(1)>div>div,nth-child(3)>div>div,nth-child(3)).click()
+          //cy.get('div>[data-testid="ProductCatalog-FlatGrid-Products"]'>div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>divnth-child(1)>div,nth-child(2)>div,nth-child(3)>div,nth-child(1)>div,nth-child(3)).click()
+          cy.get('[data-testid="ProductCatalog-FlatGrid-Products"]')
+            .find('div:nth-child(1) > div > div:nth-child(1) > div > div:nth-child(1) > div > div:nth-child(2) >div > div:nth-child(1) > div:nth-child(3)').click();
+        //cy.get(div[id='root']; div[class='css-175oi2r']; div[class='css-175oi2r']; div[class='css-175oi2r'] ;div:nth-child(1); div:nth-child(1); div:nth-child(1); div:nth-child(1); div:nth-child(1); div:nth-child(2); div:nth-child(3); div:nth-child(1); div:nth-child(3))
     })
 })
