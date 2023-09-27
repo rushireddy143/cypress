@@ -66,10 +66,25 @@ describe('dithrive health test',() => {
 
           cy.get('[data-testid=SidePannel-Text-Title4]').click()
           cy.wait(1000)
+          //cy.get(':nth-child(1) > [style="flex-direction: row; padding-left: 24px; padding-bottom: 24px;"] > [style="flex-direction: column; justify-content: center; width: 723px; margin-right: 24px;"] > :nth-child(1) > [data-testid=CatalogProductCard-View-MainContainer] > .r-13awgt0.r-1ow6zhx > .r-11c0sde > [data-testid=CatalogProductCard-View-CountContainer] > [data-testid=CatalogProductCard-Pressable-CountIncrease]').click()
+          //cy.get(':nth-child(2) > [style="flex-direction: row; padding-left: 24px; padding-bottom: 24px;"] > [style="flex-direction: column; justify-content: center; width: 723px; margin-right: 24px;"] > :nth-child(1) > [data-testid=CatalogProductCard-View-MainContainer] > .r-13awgt0.r-1ow6zhx > .r-11c0sde > [data-testid=CatalogProductCard-View-CountContainer] > [data-testid=CatalogProductCard-Pressable-CountIncrease]')
+
           //cy.get('div>[data-testid="ProductCatalog-FlatGrid-Products"]',div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>div>div,nth-child(1)>div>div,nth-child(3)>div>div,nth-child(3)).click()
           //cy.get('div>[data-testid="ProductCatalog-FlatGrid-Products"]'>div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>div,nth-child(1)>divnth-child(1)>div,nth-child(2)>div,nth-child(3)>div,nth-child(1)>div,nth-child(3)).click()
-          cy.get('[data-testid="ProductCatalog-FlatGrid-Products"]')
-            .find('div:nth-child(1) > div > div:nth-child(1) > div > div:nth-child(1) > div > div:nth-child(2) >div > div:nth-child(1) > div:nth-child(3)').click();
-        //cy.get(div[id='root']; div[class='css-175oi2r']; div[class='css-175oi2r']; div[class='css-175oi2r'] ;div:nth-child(1); div:nth-child(1); div:nth-child(1); div:nth-child(1); div:nth-child(1); div:nth-child(2); div:nth-child(3); div:nth-child(1); div:nth-child(3))
+          //cy.get('[data-testid="ProductCatalog-FlatGrid-Products"]')
+            //.find(':nth-child(1) > div > div:nth-child(1) > div > div:nth-child(1) > div > div:nth-child(2) >div > div:nth-child(1) > div:nth-child(3)').click(  );
+          //cy.get(('div>[id="root"]')>div>[class{'css-175oi2r,css-175oi2r,css-175oi2r'}])
+            //.find('div>div,nth-child(1)> div>div,nth-child(1)> div>div,nth-child(1)> div>div,nth-child(1)> div>div,nth-child(1)> div>div,nth-child(2)> div>div,nth-child(3)> div>div,nth-child(1)> div>div,nth-child(3)').click()
+        cy.get('body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)').click()
+        cy.wait(2000)
+        //cy.get('[style="flex: 1 1 0%; margin-left: 0px;"] > .r-1od9aju > .r-1loqt21').click()
+        //cy.get('[style="flex: 1 1 0%; margin-left: 0px;"] > .r-1od9aju > .r-1loqt21 > svg').click()
+        //cy.get('[data-testid="RightPannel-div-Modal"]'>'.r-1sv84sj'>'.r-obd0qt' > '.r-1od9aju' > '.r-1loqt21'>'svg').click()
+        //cy.get('.css-175oi2r.r-1loqt21.r-1otgn73.r-1awozwy.r-1777fci.r-mvpalk.r-r0h9e2.r-1guathk.r-1h4fu65').click()
+        cy.get('div[class="css-175oi2r r-1loqt21 r-1otgn73 r-1awozwy r-1777fci r-mvpalk r-r0h9e2 r-1guathk r-1h4fu65"]').click({force:true})
+        cy.get('[style="flex: 1 1 0%; margin-left: 16px;"] > .css-175oi2r').click({force:true})
+        cy.get(':nth-child(2) > .r-18u37iz > [data-testid=IconButton-TouchableOpacity-Icon]').click()
+        cy.get('[data-testid=CartPriceOverview-Text-GrandTotal]').should('have.value','')
     })
+
 })
